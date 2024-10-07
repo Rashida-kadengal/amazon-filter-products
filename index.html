@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1137958a13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+ 
+    <nav class="navbar bg-dark " >
+        <div class="container-fluid">
+          <ul class="d-flex list-unstyled justify-content-between ">
+            <li class="ms-2 d-flex align-items-center "  >
+                <a class="navbar-brand"><img src="images/amazone.jpg" alt="" width="100px"></a>
+            </li>
+
+            <li class="ms-4  d-flex align-items-center"  >
+                <div class=" d-flex  text-white ">
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="align-items-center ms-2" >
+                        <div><span>Deliver to Rashida</span></div>
+                        <div><h6>Kolappuram 676306‌</h6></div>
+        
+                    </div>
+                </div>
+            </li>
+
+            <li  class="ms-4  d-flex align-items-center"  >
+               <div class="input-group" style="width: 350px;">
+
+
+                <div class="w-25">
+                    <select class="form-select w-100 bg-secondary text-white" aria-label="Default select example">
+                     
+                      <option value="1" selected>All</option>
+                      <option value="2">Clotings</option>
+                      <option value="3">Electronics</option>
+                      <option value="4">Furniture</option>
+                    
+                   
+                    </select>
+                  </div>
+          
+
+            <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons" id="input" onclick="displayCount() ">
+         <button onclick="displayCount()" class="bg-warning d-flex justify-content-center align-items-center"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+            </li>
+
+            <li  class="ms-4 d-flex align-items-center"  >
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                
+            </li>
+
+            <li class="ms-4 d-flex align-items-center"  >
+                <div class="">
+                    <div class="text-white ms-3">Hello,Rashida</div>
+                
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Accounts & Links
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                
+                
+                </div>
+            </li>
+
+            <li class="ms-4 d-flex align-items-center"  >
+                <div>
+                    <a class="bg-dark text-white text-decoration-none">
+                        <div>Return</div>
+                        <div>&Orders</div>
+                    </a>
+                 </div>
+                
+            </li>
+
+            <li  class="ms-4 d-flex align-items-center" >
+            
+                <div>
+                    <button class="btn text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart</button>
+                 </div>
+            </li>
+          </ul>
+      
+        </div>
+      </nav>
+
+
+
+
+      <nav class="navbar bg-secondary">
+        <div class="container-fluid">
+          <ul class="d-flex list-unstyled justify-content-between ">
+            <li  class="ms-2 ">
+                <a class="text-white text-decoration-none"  href="">
+                    <i class="fa-solid fa-bars"></i>
+                All
+            </a>
+            </li>
+            <li  class="ms-3"><a class="text-white text-decoration-none"  href="">Today's Deals</a></li>
+            <li  class="ms-3"><a class="text-white text-decoration-none" href="">Buy Again</a></li>
+            <li  class="ms-3"><a class="text-white text-decoration-none" href="">Customer service</a></li>
+            <li  class="ms-3"><a class="text-white text-decoration-none" href="">Registry</a></li>
+            <li  class="ms-3"><a class="text-white text-decoration-none" href="">Gift Cards</a></li>
+            <li  class="ms-3"><a class="text-white text-decoration-none" href="">Sell</a></li>
+          </ul>
+      
+        </div>
+      </nav>
+
+      <div id="result" class="text-dark bg-warning"></div>
+
+
+
+
+      <div class=" d-flex">
+
+        <nav class="nav flex-column ">
+            <a class="nav-link  text-dark" aria-current="page" href="#">Department</a>
+            <a ><i class="fa-solid fa-caret-left ms-3"></i></i>Clear</a>
+            <ul class="list-unstyled">
+                <li class="ms-3"><a href="" class="text-decoration-none text-dark">Home & Kitchen</a></li>
+                <li class="ms-4"><a href=""  class="text-decoration-none text-dark ms-4">Kitchen Racks & Holders</a></li>
+                <li class="ms-4"><a href=""  class="text-decoration-none text-dark ms-4">Food Storage</a></li>
+                <li class="ms-4"><a href=""  class="text-decoration-none text-dark ms-4">Seasoning & Spice Tools</a></li>
+                <li class="ms-4"><a href=""  class="text-decoration-none text-dark ms-4">Cooking Utensils</a></li>
+                <li class="ms-4"><a href=""  class="text-decoration-none text-dark ms-4">Kitchen Accessories</a></li>
+                <li class="ms-4"><a href=""  class="text-decoration-none text-dark ms-4">Kitchen Knives & Accessories</a></li>
+                <li class="ms-4"><a href=""  class="text-decoration-none text-dark ms-4">Household Cleaning Tools</a></li>
+            </ul>
+    
+            <a class="nav-link text-dark" href="#">Customer Reviews</a>
+            <div class="ms-2"><i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star text-warning"></i> & Up
+            </div>
+            <a class="nav-link text-dark" href="#">Brands</a>
+    
+         
+              <div class="form-check ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    KitchenAid
+                </label>
+    
+              </div>
+              <div class="form-check ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    OXO
+                </label>
+              </div>
+    
+              <div class="form-check ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Ninja
+                </label>
+              </div>
+    
+              <div class="form-check ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Zulay Kitchen
+                </label>
+              </div>
+    
+              <div class="form-check ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Rubbermaid
+                </label>
+              </div>
+    
+              <div class="form-check ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Mueller
+                </label>
+              </div>
+    
+              <div class="form-check  ms-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Cuisinart
+                </label>
+              </div>
+    
+              <a class="ms-3 text-decoration-none text-dark"> <i class="fa-solid fa-caret-down "></i>See more</a>
+    
+              <a class="nav-link ms-2 text-dark" href="#">Top Brands in Home & Kitchen</a>
+              <a class="ms-3 text-decoration-none text-dark"><i class="fa-solid fa-caret-left"></i></i>Clear</a>
+              <div class="form-check ms-2 ">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                  Top Brands
+                </label>
+              </div>
+    
+              <a class="nav-link text-dark" href="#">Price</a>
+              <a class="ms-2 text-decoration-none text-dark"  href="#">$1
+                –
+                $50</a>
+                <div class="bg-text-info d-flex  justify-content-around ">  
+                    <input type="range" class="form-range w-75 " id="customRange1">
+                    <button class="rounded-pill">Go</button>
+                </div>
+    
+                    <a class="nav-link text-dark" href="#">
+    
+    Reset price range</a>
+    
+    <a class="nav-link  text-dark" aria-current="page" href="#">Deals&Discounts</a>
+    <ul class="list-unstyled">
+        <li><a href="" class="text-decoration-none text-dark ms-4">All Discounts</a></li>
+        <li><a href=""  class="text-decoration-none text-dark ms-4">Today's Deals</a></li>
+       
+    </ul>
+    
+    <a class="nav-link active text-dark" aria-current="page" href="#">Condition</a>
+    <ul class="list-unstyled">
+        <li><a href="" class="text-decoration-none text-dark ms-4">New
+            </a></li>
+        <li><a href=""  class="text-decoration-none text-dark ms-4">Used</a></li>
+       
+    </ul>
+    
+    
+    
+    <label for="exampleColorInput" class="form-label ms-3">Color </label>
+    <div class="d-flex justify-content-between ms-3 column-gap-1 ">
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#000000" title="Black" style="width: 2rem;">
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#808080" title="Gray" style="width: 2rem;">
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ffffff" title="White" style="width: 2rem;">
+     
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#a52a2a" title="Brown" style="width: 2rem;"> 
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#f5f5dc" title="Beige" style="width: 2rem;"> 
+    
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ff0000" title="Red" style="width: 2rem;"> 
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ffc0cb" title="Pink" style="width: 2rem;">
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ffa500" title="Orange" style="width: 2rem;"> 
+    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ffff00" title="Yellow" style="width: 2rem;">   
+    
+    </div>
+    
+    
+    <div class="d-flex column-gap-1 ms-3 mt-1 ">
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#fffff0" title="Ivory" style="width: 2rem;">
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#008000" title="Green" style="width: 2rem;">
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#0000ff" title="Blue" style="width: 2rem;">
+         
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#800080" title="Purple" style="width: 2rem;"> 
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#ffd700" title="Gold" style="width: 2rem;"> 
+        
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#c0c0c0" title="Silver" style="width: 2rem;"> 
+    
+        
+        
+        
+        
+        </div>
+    
+        <a class="nav-link text-dark" href="#">From Our Brands</a>
+        <div class="form-check ms-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+                Amazon Brands
+            </label>
+          </div>
+    
+    
+          <a class="nav-link text-dark" href="#">Business Type</a>
+          <div class="form-check ms-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Small Business
+              </label>
+            </div>
+    
+    
+            <a class="nav-link text-dark" href="#">Amazon Certified</a>
+            <div class="form-check ms-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Works with Alexa
+                </label>
+              </div>
+    
+    
+              
+            <a class="nav-link text-dark" href="#">Seller</a>
+            <div class="form-check ms-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Amazon.com
+                </label>
+              </div>
+    
+              <div class="form-check ms-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked">
+                    Amazon Resale
+                </label>
+              </div>
+    
+              <a class="ms-2 text-decoration-none text-dark"> <i class="fa-solid fa-caret-down"></i>See more</a>
+
+        
+      
+              <div class="col-lg-4 col-md-6 mx-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="d-flex justify-content-center product-img">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTzSSd1OTHBHs2NukKQ9-UTVcvRqNklNec9zyl6jP0MscsYCIIkM-zBrNpfqIy1f6Ly3QCdyvxpAT8LbkWIGJP1qvz8GhKlZAVEDJ1ZHjgt4R7lZaE8dkaDhoZBbw&usqp=CAc" class="card-img-top img-fluid w-50" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">SanDisk Cruzer Blade USB Flash Drive 64GB </h5>
+                      <p class="card-text">SanDisk Cruzer Blade USB Flash Drive 64GB</p>
+                      <div class="row">
+                       <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"><i class="fa-regular fa-star text-warning"></i></div>
+                    </div>
+                    <p class="card-title">$18<sup>89</sup></p>
+                    <p class=" card-title text-secondary "> ($1.72/Count)</p>
+                    <p class="card-title">Delivery Mon, Aug 12</p>
+                    <p class="card-title">Ships to India</p>
+                      <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+       
+    
+    </nav>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col  my-4">
+                <h1 class="fs-2">Results</h1>
+                <p>Check each product page for other buying options. Price and other details may vary based on product size and color.</p>
+
+                    <div class="underline mx-auto mt-3">
+
+                    </div>
+            </div>
+        </div>
+
+        <div class="row mt-3  mb-4   button-group filter-button-group">
+            <div class="col d-flex justify-content-center">
+                <button type="button" data-filter="*" class="btn btn-primary mx-1 text-dark">All</button>
+                <button type="button" data-filter=".electronic" class=" btn btn-primary mx-1 text-dark">Electronic</button>
+                <button type="button" data-filter=".clothing" class="btn btn-primary mx-1 text-dark">Clothing</button>
+                <button type="button" data-filter=".furniture" class="btn btn-primary mx-1 text-dark">Furniture</button>
+            </div>
+            </div>
+
+
+            <div class="row justify-content-center g-4  " id="product-list" >
+
+ <div class="col-lg-4 col-md-6 electronic">
+    <div class="card" style="width: 18rem;">
+        <div class="d-flex justify-content-center product-img">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSxjGLNkCkYOTyMBH0iBLC97nD0N_Qaedu0ceaIGelZser_KyTXEu6CzwtAJyS1P033wHwMW6Fj5E87M1otQ9dnzZ6Kqa7qtwf9jc4bPnDln7CdLdLipgr6gA&usqp=CAE" class="card-img-top img-fluid w-50" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">64GB USB MP3 Player with Bluetooth</h5>
+          <p class="card-text">64GB USB MP3 Player with Bluetooth AGPTEK U5PL 2 in 1 Type-C & USB Music Player</p>
+          <div class="row">
+           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+        </div>
+        <p class="card-title">$12<sup>99</sup></p>
+        <p class="card-title">Delivery Mon, Aug 12</p>
+        <p class="card-title"><span>Ships to India</span></p>
+          <a href="#" class="btn btn-warning">Add to cart</a>
+        </div>
+      </div>
+</div>
+           
+
+
+
+ <div class="col-lg-4 col-md-6 electronic">
+    <div class="card" style="width: 18rem;">
+        <div class="d-flex justify-content-center product-img">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBsgkfLx_OnQjnlFMJwaRC0UK2hJRgq98frZ04o-cCKH9wpwSjXXzKdFNK3mGwuVZvFNALcbP3oBo-8AiPha9Kzj97_WMmu33BPdmbOrFjUhjyU19XGO2UyeEKk5GA24cjsO_-rAS9_A&usqp=CAc" class="card-img-top img-fluid w-50" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">*2024 Newest *Mini Portable Projector </h5>
+          <p class="card-text">*2024 Newest *Mini Portable Projector 5G Wifi 6 BT 5.0 Android 11, Projector 4K 1080P Full HD Support 8000 Lumens.</p>
+          <div class="row">
+           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+           <div class="col-md-1"><i class="fa-regular fa-star text-warning"></i></div>
+        </div>
+        <p class="card-title">$28<sup>99</sup>($1.93/100 sheets)</p>
+        <!-- <p class="card-title">($1.93/100 sheets)</p> -->
+        <p class="card-title">Delivery Mon, Aug 12</p>
+        <p class="card-title"><span>Ships to India</span></p>
+          <a href="#" class="btn btn-warning">Add to cart</a>
+        </div>
+      </div>
+                </div> 
+
+
+       
+
+
+
+
+                <div class="col-lg-4 col-md-6 clothing">
+                <div class="card" style="width: 18rem;">
+                    <div class="d-flex justify-content-center product-img">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSujaOtkTOm3v8twqpP3rsvFvkKIX2DgBEk8_FV-Q0NNLVeYw-SSKs3GNW0aHBnNSZYSb5_5eEWeZ0T2hjY0vYJNqfyFY2mYTBO3zxLb2DhNGcSjRFE6pAY&usqp=CAE" class="card-img-top img-fluid w-50" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">David Koma  </h5>
+                      <p class="card-text">David Koma Crystal-embellished midi dress Women Pink.</p>
+                      <div class="row">
+                       <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"><i class="fa-regular fa-star text-warning"></i></div>
+                    </div>
+                    <p class="card-title">$28<sup>34</sup></p>
+                    <p class="card-title text-secondary">List:<strike>$29.99</strike></p>
+                    <p class="card-title">Delivery Mon, Aug 12</p>
+                    <p class="card-title"><span>Ships to India</span></p>
+                      <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 clothing">
+                    <div class="card" style="width: 18rem;">
+                        <div class="d-flex justify-content-center product-img">
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTfuTlfPpPs3-uH--iJcg-iMo4BZntcDTSx8NYJ9077b-ErWMSR9dZQyU9YDI3TSdMN3Gr0Na9MjTWvodNPt_Rx-jViMAB-2tKjRot5Dn0jl8kBjfkj1VlH&usqp=CAE" class="card-img-top img-fluid w-50" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Women's Brown Linear Flower Print Shirt-Dress</h5>
+                          <p class="card-text">Women's Brown Linear Flower Print Shirt-Dress | Extra Small | Smart and Joy</p>
+                          <div class="row">
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                        </div>
+                        <p class="card-title">$29<sup>99</sup></p>
+                        <p class="card-title">Delivery Mon, Aug 12</p>
+                        <p class="card-title"><span>Ships to India</span></p>
+                          <a href="#" class="btn btn-warning">Add to cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                <div class="col-lg-4 col-md-6 electronic">
+                    <div class="card" style="width: 18rem;">
+                        <div class="d-flex justify-content-center product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTJoTiq5NcaNCWsQiimCL-MBxPm9OxGMgI67UjRyuBrBeo_Tr1iPFR-Qp-6zviMaDsWj3RRarQCvUhYiowij5NIY98jRkrJiNs89JsoDcs4CzcmH1XgDg-CMQ&usqp=CAE" class="card-img-top img-fluid w-50" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Zello Walkie Talkie Smartphone</h5>
+                          <p class="card-text">Zello Walkie Talkie Smartphone - Inrico F30S, Dual Version, 1GB+8GB, Android 8.1 ...</p>
+                          <div class="row">
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-regular fa-star text-warning"></i></div>
+                        </div>
+                        <p class="card-title">$1<sup>99</sup></p>
+                        <p class=" card-title text-secondary">($0.10/Count)</p>
+                        <p class="card-title">Delivery Mon, Aug 12</p>
+                        <p class="card-title"><span>Ships to India</span></p>
+                          <a href="#" class="btn btn-warning">Add to cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                <div class="col-lg-4 col-md-6 furniture">
+                    <div class="card" style="width: 18rem;">
+                        <div class="d-flex justify-content-center product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRhpyV5dUoS_fkS3LoE94GN5Ow-pvjS79TX7A4bqpBykU6ei6GqC9Gk7Myam_GYNiya8MNhiqQ-346i9b8UeLYvphIn_1pDDc6etIRvwcM&usqp=CAE" class="card-img-top img-fluid w-50" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Audace 5-Piece King Bedroom Set </h5>
+                          <p class="card-text">Audace 5-Piece King Bedroom Set - 180x200 cm</p>
+                          <div class="row">
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-regular fa-star text-warning"></i></div>
+                        </div>
+                        <p class="card-title">$34<sup>67</sup></p>
+                        <p class="card-title">Delivery Mon, Aug 12</p>
+                        <p class="card-title"><span>Ships to India</span></p>
+                          <a href="#" class="btn btn-warning">Add to cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                
+                <div class="col-lg-4 col-md-6 electronic">
+                    <div class="card" style="width: 18rem;">
+                        <div class="d-flex justify-content-center product-img">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTzSSd1OTHBHs2NukKQ9-UTVcvRqNklNec9zyl6jP0MscsYCIIkM-zBrNpfqIy1f6Ly3QCdyvxpAT8LbkWIGJP1qvz8GhKlZAVEDJ1ZHjgt4R7lZaE8dkaDhoZBbw&usqp=CAc" class="card-img-top img-fluid w-50" alt="...">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">SanDisk Cruzer Blade USB Flash Drive 64GB </h5>
+                          <p class="card-text">SanDisk Cruzer Blade USB Flash Drive 64GB</p>
+                          <div class="row">
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+                           <div class="col-md-1"><i class="fa-regular fa-star text-warning"></i></div>
+                        </div>
+                        <p class="card-title">$18<sup>89</sup></p>
+                        <p class=" card-title text-secondary "> ($1.72/Count)</p>
+                        <p class="card-title">Delivery Mon, Aug 12</p>
+                        <p class="card-title">Ships to India</p>
+                          <a href="#" class="btn btn-warning">Add to cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+            <div class="col-lg-4 col-md-6 clothing">
+                <div class="card" style="width: 18rem;">
+                    <div class="d-flex justify-content-center product-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRKQTlZg0_L0N7yUAUabhyuZzk8iS9nt6qFWWMoB59-uk1lV4gqyfjC4DmO7-Ul-gXP_hfheh0bY7Z_A-CbkNqQ7V0zinTpQ5oGwEBT4U_sqlCuadCwFJJW&usqp=CAE" class="card-img-top img-fluid w-50 product-img" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">H&M Ladder-stitch-look Knitted Mini Dress </h5>
+                      <p class="card-text">H&M Ladder-stitch-look Knitted Mini Dress</p>
+                      <div class="row">
+                       <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1 "> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"><i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"> <i class="fa-solid fa-star text-warning"></i></div>
+                       <div class="col-md-1"><i class="fa-regular fa-star text-warning"></i></div>
+                    </div>
+                    <p class="card-title">$9<sup>99</sup></p>
+                    <p class=" card-title text-secondary "> ($2.50/Count)</p>
+                    <p class="card-title">Delivery Mon, Aug 12</p>
+                    <p class="card-title">Ships to India</p>
+                      <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+    </div>
+
+
+ 
+
+</div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="script.js"></script> 
+</body>
+</html>
